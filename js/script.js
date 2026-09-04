@@ -1,7 +1,7 @@
 let x = document.getElementById('dark')
 
 dark.addEventListener('click', () => {
-    document.body.style.background = '#000'
+    document.body.style.background = '#2c1b1b'
 })
 
 
@@ -10,7 +10,7 @@ dark.addEventListener('click', () => {
 
 function lig() {
     document.getElementById('light').innerHTML = "Nice"
-    document.body.style.background = "#fff"
+    document.body.style.background = "#cfd8e6"
 
 }
 
@@ -34,3 +34,17 @@ sub.addEventListener('click', () => {
 
 })
 
+
+function sls(){
+    
+let input = document.getElementById ("sks")
+if(input.value ===""){
+    alert("fill the box")
+    
+}
+else{
+   alert(" your name is" + input.value)
+}
+
+
+}
