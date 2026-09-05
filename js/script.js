@@ -21,30 +21,69 @@ let sub = document.getElementById('sub')
 
 sub.addEventListener('click', () => {
 
-    let inputinp =inp.value
+    let inputinp = inp.value
 
     if (inputinp > 18) {
         alert("adult")
 
     }
 
-    else{
+    else {
         alert("child")
     }
 
 })
 
 
-function sls(){
-    
-let input = document.getElementById ("sks")
-if(input.value ===""){
-    alert("fill the box")
-    
-}
-else{
-   alert(" your name is" + input.value)
-}
+function sls() {
+
+    let input = document.getElementById("sks")
+    if (input.value === "") {
+        alert("fill the box")
+
+    }
+    else {
+        alert(" your name is" + input.value)
+    }
 
 
 }
+
+// function dks() {
+
+//     let inputbtn = document.getElementById('inputbtn');
+//     let deleteMe = document.getElementById('deleteMe');
+//     // let deleted = document.getElementById('deleted')
+
+
+
+//     if (inputbtn.value === "Delete") {
+//         deletes.remove();
+
+//     }
+//     else {
+//         alert('please type Delete')
+//     }
+
+
+// }
+
+
+
+
+let deletes =document.getElementById('deletes')
+let inputbtn =document.getElementById('inputbtn')
+let deleted =document.getElementById('deleted')
+
+
+deleted.addEventListener("click",()=>{
+
+
+    if(inputbtn.value === "delete"){
+        deletes.remove();
+
+    }
+    else{
+        alert('plese type deletedsffadsf')
+    }
+})
