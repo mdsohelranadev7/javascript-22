@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/all.min.css">
 
 
 
@@ -12,44 +15,28 @@
 
 
 </head>
+
 <body>
-<div class="first">
-    
-    <input type="text" id="inp" placeholder="Enter your age">
-    <button id="sub" onclick="wels()">submit</button>
-    <div class="yee"></div>
-</div>
-
-    <button id="dark">Dark</button>
-    <button id="light" onclick="lig ()">light</button>
+    <div id="bgColor" class=" h-56 bg-amber-400 relative">
 
 
+        <h2 id="headtext" class="text-center pt-15 text-2xl"> Click the color button </h2>
 
+        <button id="colorBtn" class="border p-2 block mx-auto mt-3 bg-blue-500 text-white rounded-3xl ">Color
+            Button</button>
 
+        <div class=" absolute top-10 right-50">
+            <span class="" id="moon"><i class="fa-solid fa-moon text-2xl text-red-500 "></i></span>
+            <span class="" id="sun"><i class="fa-solid fa-sun text-2xl text-red-500 ml-3 "></i></span>
 
-   <div class="ds">
-     <input type="text" id="sks" placeholder=" Enter your name">
-    <button id="last" onclick="sls()">submit</button>
-   </div>
+        </div>
+
+    </div>
 
 
 
 
 
-
-
-
-   <h2 id="deletes">delete me</h2>
-
-   <input type="text" id="inputbtn" placeholder="your name">
-   <button id="deleted">Delete</button>
-
-
-
-<br>
-
-   <button id="red">red</button>
-   <button id="green" onclick="grn()">green</button>
 
 
 
@@ -57,4 +44,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
