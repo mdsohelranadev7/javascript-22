@@ -46,7 +46,6 @@ function sls() {
         alert(" your name is" + input.value)
     }
 
-
 }
 
 // function dks() {
@@ -71,19 +70,32 @@ function sls() {
 
 
 
-let deletes =document.getElementById('deletes')
-let inputbtn =document.getElementById('inputbtn')
-let deleted =document.getElementById('deleted')
+let deletes = document.getElementById("deletes")
+let inputbtn = document.getElementById("inputbtn")
+let deleted = document.getElementById("deleted")
 
 
-deleted.addEventListener("click",()=>{
-
-
-    if(inputbtn.value === "delete"){
+deleted.addEventListener("click", () => {
+    if (inputbtn.value === "delete") {
         deletes.remove();
+        inputbtn.remove=""
 
     }
-    else{
-        alert('plese type deletedsffadsf')
+    else {
+        alert('delete nam e lekho')
     }
 })
+
+
+let red = document.getElementById("red")
+
+
+red.addEventListener('click', ()=>{
+    document.body.style.background = "red"
+    document.getElementById("red").innerHTML = 'blue'
+})
+
+function grn (){
+    let green = document.getElementById("green")
+    document.body.style.background = 'green'
+}
