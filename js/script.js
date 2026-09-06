@@ -33,4 +33,4 @@ let sun =document.getElementById('sun')
 sun.addEventListener('click',()=>{
     bgColor.style.background="#fff"
      headtext.style.color="#000"
-})
+})  
