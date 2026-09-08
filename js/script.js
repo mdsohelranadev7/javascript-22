@@ -37,9 +37,13 @@ sun.addEventListener('click', () => {
 
 
 
+
+
+
 let output = document.getElementById('output')
 let hexa = document.getElementById('hexa')
 let copyBtn = document.getElementById('copyBtn')
+let toast = document.getElementById('toast')
 
 hexa.addEventListener('click', () => {
 
@@ -47,10 +51,22 @@ hexa.addEventListener('click', () => {
     secoundDiv.style.background = bg
     output.value = bg
 
-    copyBtn.addEventListener('click',()=>{
+    copyBtn.addEventListener('click', () => {
         navigator.clipboard.writeText(output.value)
     })
+
+
+
 })
+
+function sdkl() {
+    document.getElementById('copyBtn').innerHTML = "Copied"
+    
+
+}
+
+
+
 
 function randombg() {
     let reds = Math.floor(Math.random() * 255);
@@ -60,3 +76,7 @@ function randombg() {
 
     return `#${reds.toString(16).padStart(2, '0')}${greens.toString(16).padStart(2, '0')}${blues.toString(16).padStart(2, '0')}`
 }
+
+
+
+
